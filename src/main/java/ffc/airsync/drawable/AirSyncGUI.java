@@ -5,6 +5,7 @@
  */
 package ffc.airsync.drawable;
 
+import com.sun.glass.ui.Screen;
 import javax.swing.JFrame;
 
 /**
@@ -22,6 +23,10 @@ public class AirSyncGUI extends javax.swing.JFrame {
         setUndecorated(true);
         initComponents();
     }
+    
+    public void switchWindows() {
+        setVisible(!isVisible());
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -37,6 +42,8 @@ public class AirSyncGUI extends javax.swing.JFrame {
         headerLabel = new javax.swing.JLabel();
         statusPanel = new javax.swing.JScrollPane();
         footerPanel = new javax.swing.JPanel();
+        closeButton = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,6 +74,22 @@ public class AirSyncGUI extends javax.swing.JFrame {
 
         footerPanel.setLayout(new java.awt.GridLayout(1, 3));
 
+        closeButton.setText("ปิดโปรแกรม");
+        closeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                closeButtonActionPerformed(evt);
+            }
+        });
+        footerPanel.add(closeButton);
+
+        jButton2.setText("ย่อหน้าจอเก็บ");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        footerPanel.add(jButton2);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -87,6 +110,14 @@ public class AirSyncGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_closeButtonActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -128,10 +159,12 @@ public class AirSyncGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton closeButton;
     public javax.swing.JPanel footerPanel;
     public javax.swing.JLabel headerLabel;
     private javax.swing.JPanel headerPanel;
     public javax.swing.JLabel icon;
+    private javax.swing.JButton jButton2;
     public javax.swing.JScrollPane statusPanel;
     // End of variables declaration//GEN-END:variables
 }

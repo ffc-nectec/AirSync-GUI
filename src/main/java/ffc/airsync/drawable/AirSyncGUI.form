@@ -107,6 +107,24 @@
         <Property name="columns" type="int" value="3"/>
         <Property name="rows" type="int" value="1"/>
       </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="closeButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xe1b;&#xe34;&#xe14;&#xe42;&#xe1b;&#xe23;&#xe41;&#xe01;&#xe23;&#xe21;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xe22;&#xe48;&#xe2d;&#xe2b;&#xe19;&#xe49;&#xe32;&#xe08;&#xe2d;&#xe40;&#xe01;&#xe47;&#xe1a;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
     </Container>
   </SubComponents>
 </Form>
