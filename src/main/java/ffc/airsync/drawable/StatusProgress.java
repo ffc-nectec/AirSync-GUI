@@ -16,7 +16,7 @@ public class StatusProgress extends javax.swing.JPanel {
      */
     public StatusProgress() {
         initComponents();
-        
+
     }
 
     /**
