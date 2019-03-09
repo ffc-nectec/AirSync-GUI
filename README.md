@@ -1,7 +1,7 @@
 # AirSync-GUI
 
 
-[![Build Status](https://travis-ci.org/ffc-nectec/AirSync-GUI.svg?branch=master)](https://travis-ci.org/ffc-nectec/AirSync-GUI.ini) [![Release](https://jitpack.io/v/ffc-nectec/AirSync-GUI.svg)](https://jitpack.io/#ffc-nectec/AirSync-GUI)  
+[![Build Status](https://travis-ci.org/ffc-nectec/AirSync-GUI.svg?branch=master)](https://travis-ci.org/ffc-nectec/AirSync-GUI) [![Release](https://jitpack.io/v/ffc-nectec/AirSync-GUI.svg)](https://jitpack.io/#ffc-nectec/AirSync-GUI)  
 
 เพิ่ม JitPack repository ที่ build script
 ```
