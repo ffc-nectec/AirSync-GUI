@@ -40,7 +40,8 @@ public class AirSyncGUI extends javax.swing.JFrame {
         headerPanel = new javax.swing.JPanel();
         icon = new javax.swing.JLabel();
         headerLabel = new javax.swing.JLabel();
-        statusPanel = new javax.swing.JScrollPane();
+        centerPanel = new javax.swing.JScrollPane();
+        statusPanel = new javax.swing.JPanel();
         footerPanel = new javax.swing.JPanel();
         closeButton = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -71,6 +72,9 @@ public class AirSyncGUI extends javax.swing.JFrame {
             .addComponent(headerLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
         );
 
+        statusPanel.setLayout(new java.awt.GridLayout(0, 1));
+        centerPanel.setViewportView(statusPanel);
+
         footerPanel.setLayout(new java.awt.GridLayout(1, 3));
 
         closeButton.setText("ปิดโปรแกรม");
@@ -95,14 +99,14 @@ public class AirSyncGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(headerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(footerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(statusPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 312, Short.MAX_VALUE)
+            .addComponent(centerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 312, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(headerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(statusPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE)
+                .addComponent(centerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(footerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -158,12 +162,13 @@ public class AirSyncGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane centerPanel;
     private javax.swing.JButton closeButton;
     public javax.swing.JPanel footerPanel;
     public javax.swing.JLabel headerLabel;
     private javax.swing.JPanel headerPanel;
     public javax.swing.JLabel icon;
     private javax.swing.JButton jButton2;
-    public javax.swing.JScrollPane statusPanel;
+    public javax.swing.JPanel statusPanel;
     // End of variables declaration//GEN-END:variables
 }

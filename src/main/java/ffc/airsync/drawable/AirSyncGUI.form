@@ -25,7 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="headerPanel" max="32767" attributes="0"/>
           <Component id="footerPanel" alignment="0" max="32767" attributes="0"/>
-          <Component id="statusPanel" alignment="0" pref="312" max="32767" attributes="0"/>
+          <Component id="centerPanel" alignment="0" pref="312" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -33,7 +33,7 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="headerPanel" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="statusPanel" pref="302" max="32767" attributes="0"/>
+              <Component id="centerPanel" pref="302" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="footerPanel" min="-2" pref="39" max="-2" attributes="0"/>
           </Group>
@@ -89,12 +89,21 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JScrollPane" name="statusPanel">
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
+    <Container class="javax.swing.JScrollPane" name="centerPanel">
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="statusPanel">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+            <Property name="columns" type="int" value="1"/>
+            <Property name="rows" type="int" value="0"/>
+          </Layout>
+        </Container>
+      </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="footerPanel">
       <AuxValues>
