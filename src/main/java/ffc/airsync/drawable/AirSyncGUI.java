@@ -17,6 +17,9 @@ public class AirSyncGUI extends javax.swing.JFrame {
      * Creates new form PopUpGui
      */
     public AirSyncGUI() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setType(Type.UTILITY);
+        setUndecorated(true);
         initComponents();
     }
 
