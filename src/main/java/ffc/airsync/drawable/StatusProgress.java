@@ -5,6 +5,8 @@
  */
 package ffc.airsync.drawable;
 
+import java.awt.Dimension;
+
 /**
  *
  * @author Thanachai Thongkum
@@ -16,6 +18,11 @@ public class StatusProgress extends javax.swing.JPanel {
      */
     public StatusProgress() {
         initComponents();
+    }
+
+    public StatusProgress(int width, int height) {
+        this();
+        setPreferredSize(new Dimension(width, height));
     }
 
     public void setValue(int value) {
