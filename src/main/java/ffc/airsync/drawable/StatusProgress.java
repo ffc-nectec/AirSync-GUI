@@ -16,7 +16,11 @@ public class StatusProgress extends javax.swing.JPanel {
      */
     public StatusProgress() {
         initComponents();
+    }
 
+    public void setValue(int value) {
+        jProgressBar.setValue(value);
+        label.setText(label.getText());
     }
 
     /**
@@ -30,7 +34,7 @@ public class StatusProgress extends javax.swing.JPanel {
 
         label = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        progressBar = new javax.swing.JProgressBar();
+        jProgressBar = new javax.swing.JProgressBar();
 
         setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         setName(""); // NOI18N
@@ -44,17 +48,17 @@ public class StatusProgress extends javax.swing.JPanel {
         label.setPreferredSize(new java.awt.Dimension(34, 19));
         add(label);
 
-        progressBar.setBackground(new java.awt.Color(255, 255, 255));
+        jProgressBar.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(progressBar, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
+            .addComponent(jProgressBar, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(progressBar, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+            .addComponent(jProgressBar, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
         );
 
         add(jPanel1);
@@ -63,7 +67,7 @@ public class StatusProgress extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JProgressBar jProgressBar;
     public javax.swing.JLabel label;
-    public javax.swing.JProgressBar progressBar;
     // End of variables declaration//GEN-END:variables
 }
