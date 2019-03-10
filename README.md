@@ -3,6 +3,8 @@
 
 [![Build Status](https://travis-ci.org/ffc-nectec/AirSync-GUI.svg?branch=master)](https://travis-ci.org/ffc-nectec/AirSync-GUI) [![Release](https://jitpack.io/v/ffc-nectec/AirSync-GUI.svg)](https://jitpack.io/#ffc-nectec/AirSync-GUI)  
 
+![Capture](Capture.PNG)
+
 เพิ่ม JitPack repository ที่ build script
 ```
 allprojects {
