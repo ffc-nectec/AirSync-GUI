@@ -20,7 +20,7 @@ public class StatusProgress extends javax.swing.JPanel {
 
     public void setValue(int value) {
         jProgressBar.setValue(value);
-        label.setText(label.getText());
+        label.updateUI();
     }
 
     /**
