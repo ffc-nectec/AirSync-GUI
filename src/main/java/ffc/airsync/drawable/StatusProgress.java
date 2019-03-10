@@ -49,6 +49,7 @@ public class StatusProgress extends javax.swing.JPanel {
         add(label);
 
         jProgressBar.setBackground(new java.awt.Color(255, 255, 255));
+        jProgressBar.setForeground(new java.awt.Color(0, 255, 51));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

@@ -46,8 +46,6 @@ public class AirSyncGUI extends javax.swing.JFrame {
         closeButton = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         headerPanel.setBackground(new java.awt.Color(204, 255, 204));
 
         icon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -62,7 +60,7 @@ public class AirSyncGUI extends javax.swing.JFrame {
         headerPanelLayout.setHorizontalGroup(
             headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerPanelLayout.createSequentialGroup()
-                .addComponent(icon, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(icon, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(headerLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -72,12 +70,16 @@ public class AirSyncGUI extends javax.swing.JFrame {
             .addComponent(headerLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
         );
 
+        statusPanel.setBackground(new java.awt.Color(204, 255, 204));
         statusPanel.setLayout(new java.awt.GridLayout(0, 1));
         centerPanel.setViewportView(statusPanel);
 
         footerPanel.setLayout(new java.awt.GridLayout(1, 3));
 
+        closeButton.setBackground(new java.awt.Color(255, 102, 102));
         closeButton.setText("ปิดโปรแกรม");
+        closeButton.setContentAreaFilled(false);
+        closeButton.setOpaque(true);
         closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 closeButtonActionPerformed(evt);
@@ -85,7 +87,9 @@ public class AirSyncGUI extends javax.swing.JFrame {
         });
         footerPanel.add(closeButton);
 
+        jButton2.setBackground(new java.awt.Color(204, 255, 102));
         jButton2.setText("ย่อหน้าจอเก็บ");
+        jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
